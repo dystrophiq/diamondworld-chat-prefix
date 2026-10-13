@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "chat_prefix",
+  "version": "${version}",
+  "name": "Chat Prefix",
+  "description": "Adds a configurable chat prefix, toggleable with F8.",
+  "authors": ["DW"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["ru.diamondworld.chatprefix.ChatPrefixClient"]
+  },
+  "mixins": ["chat_prefix.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "26.2",
+    "java": ">=25",
+    "fabric-api": ">=0.161.0"
+  }
+}
